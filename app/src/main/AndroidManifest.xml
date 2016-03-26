@@ -18,6 +18,10 @@
         <activity
             android:name=".DashActivity"
             android:label="@string/title_activity_dash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MacroActivity"
+            android:label="@string/title_activity_macro"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
