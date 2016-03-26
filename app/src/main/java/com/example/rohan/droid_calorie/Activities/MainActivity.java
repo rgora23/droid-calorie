@@ -1,4 +1,4 @@
-package com.example.rohan.droid_calorie.Controller;
+package com.example.rohan.droid_calorie.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
