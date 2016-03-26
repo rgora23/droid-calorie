@@ -3,27 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.nineinchmales.longcircuit.MainActivity">
     <item
-        android:id="@+id/settings_activity_menu_button"
+        android:id="@+id/food_activity_menu_button"
         android:orderInCategory="0"
         android:title="Food"
         app:showAsAction="never" />
     <item
-        android:id="@+id/gameplay_activity_menu_button"
+        android:id="@+id/user_activity_menu_button"
         android:orderInCategory="1"
         android:title="Users"
         app:showAsAction="never" />
     <item
-        android:id="@+id/level_selector_activity_menu_button"
+        android:id="@+id/dash_activity_menu_button"
         android:orderInCategory="2"
         android:title="Dashboard"
         app:showAsAction="never" />
     <item
-        android:id="@+id/main_menu_activity_menu_button"
+        android:id="@+id/day_activity_menu_button"
         android:orderInCategory="3"
         android:title="Day Detail"
         app:showAsAction="never" />
     <item
-        android:id="@+id/high_scores_activity_menu_button"
+        android:id="@+id/macro_activity_menu_button"
         android:orderInCategory="4"
         android:title="Macro Detail"
         app:showAsAction="never" />
