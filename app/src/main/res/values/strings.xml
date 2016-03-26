@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">droid-calorie</string>
+    <string name="title_activity_dash">DashActivity</string>
 </resources>
