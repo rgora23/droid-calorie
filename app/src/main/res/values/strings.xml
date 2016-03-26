@@ -2,4 +2,6 @@
     <string name="app_name">droid-calorie</string>
     <string name="title_activity_dash">DashActivity</string>
     <string name="title_activity_macro">MacroActivity</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="title_activity_day_detail">DayDetail</string>
 </resources>
