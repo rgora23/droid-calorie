@@ -38,8 +38,9 @@
         android:layout_height="wrap_content"
         android:text="Macro"
         android:id="@+id/macrobutton"
-        android:layout_alignTop="@+id/dashbutton"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/foodbutton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="48dp" />
 
 </RelativeLayout>
 

@@ -18,9 +18,9 @@
         android:layout_height="wrap_content"
         android:text="Macro"
         android:id="@+id/Macrobutton"
-        android:layout_marginBottom="51dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/foodbutton"
+        android:layout_alignParentStart="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -28,7 +28,8 @@
         android:layout_height="wrap_content"
         android:text="Food"
         android:id="@+id/foodbutton"
-        android:layout_alignTop="@+id/Macrobutton"
+        android:layout_marginBottom="53dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -38,5 +39,5 @@
         android:text="Day Details"
         android:id="@+id/daybutton"
         android:layout_alignTop="@+id/Macrobutton"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
