@@ -12,36 +12,6 @@
     tools:context=".Activities.DayDetail"
     tools:showIn="@layout/activity_day_detail">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dashboard"
-        android:id="@+id/dashbutton"
-        android:layout_marginBottom="54dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:allowUndo="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Food"
-        android:id="@+id/foodbutton"
-        android:layout_alignTop="@+id/dashbutton"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Macro"
-        android:id="@+id/macrobutton"
-        android:layout_above="@+id/foodbutton"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="48dp" />
-
 </RelativeLayout>
 
 
