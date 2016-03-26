@@ -62,5 +62,6 @@ public class User {
     public void setMealPlan(String mealPlan){
         this.mealPlan = mealPlan;
     }
+
 }
 

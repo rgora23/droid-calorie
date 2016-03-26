@@ -6,9 +6,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Controller.MainActivity">
+        android:supportsRtl="true">
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,23 +15,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Controller.DashActivity"
+            android:name=".Activities.DashActivity"
             android:label="@string/title_activity_dash"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
-            android:name=".Controller.MacroActivity"
+            android:name=".Activities.MacroActivity"
             android:label="@string/title_activity_macro"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
-            android:name=".Controller.AccountActivity"
+            android:name=".Activities.AccountActivity"
             android:label="@string/title_activity_account"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
-            android:name=".Controller.DayDetail"
+            android:name=".Activities.DayDetail"
             android:label="@string/title_activity_day_detail"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
-            android:name=".Controller.FoodActivity"
+            android:name=".Activities.FoodActivity"
             android:label="@string/title_activity_food"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
