@@ -11,6 +11,8 @@ import android.view.MenuItem;
 
 import com.example.rohan.droid_calorie.R;
 
+import java.util.ArrayList;
+
 public class MacroActivity extends AppCompatActivity {
 
     @Override
