@@ -16,8 +16,8 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:id="@+id/dasnext"
+        android:text="Macro"
+        android:id="@+id/Macrobutton"
         android:layout_marginBottom="51dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
@@ -26,8 +26,17 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Previous"
-        android:id="@+id/das_prev"
-        android:layout_above="@+id/dasnext"
-        android:layout_alignEnd="@+id/dasnext" />
+        android:text="Food"
+        android:id="@+id/foodbutton"
+        android:layout_alignTop="@+id/Macrobutton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day Details"
+        android:id="@+id/daybutton"
+        android:layout_alignTop="@+id/Macrobutton"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
