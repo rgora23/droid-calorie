@@ -12,4 +12,22 @@
     tools:context=".Controller.FoodActivity"
     tools:showIn="@layout/activity_food">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/foodnext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:id="@+id/foodprev"
+        android:layout_above="@+id/foodnext"
+        android:layout_alignEnd="@+id/foodnext" />
 </RelativeLayout>

@@ -12,6 +12,26 @@
     tools:context=".Controller.DayDetail"
     tools:showIn="@layout/activity_day_detail">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/daynext"
+        android:layout_marginBottom="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:allowUndo="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:id="@+id/dayprev"
+        android:layout_above="@+id/daynext"
+        android:layout_alignStart="@+id/daynext" />
+
 </RelativeLayout>
 
 

@@ -12,4 +12,22 @@
     tools:context=".Controller.DashActivity"
     tools:showIn="@layout/activity_dash">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/dasnext"
+        android:layout_marginBottom="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:id="@+id/das_prev"
+        android:layout_above="@+id/dasnext"
+        android:layout_alignEnd="@+id/dasnext" />
 </RelativeLayout>
