@@ -49,6 +49,12 @@ public class MacroActivity extends AppCompatActivity {
             pieChart.setHoleRadius(7);
             pieChart.setTransparentCircleRadius(10);
 
+            RelativeLayout.LayoutParams layoutParams =
+                    (RelativeLayout.LayoutParams)pieChart.getLayoutParams();
+            layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
+            pieChart.setLayoutParams(layoutParams);
+
+
             pieChart.setRotationAngle(0);
             pieChart.setRotationEnabled(true);
 

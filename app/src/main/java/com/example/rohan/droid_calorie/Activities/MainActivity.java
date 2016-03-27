@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
         ListView listView = (ListView) findViewById(R.id.userView);
         ArrayList<User> user = User.loadSampleUsers();
 
+
         UserAdapter adapter = new UserAdapter(this);
         adapter.addAll(user);
         listView.setAdapter(adapter);
