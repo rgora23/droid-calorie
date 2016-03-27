@@ -12,4 +12,10 @@
     tools:context=".Activities.MacroActivity"
     tools:showIn="@layout/activity_macro">
 
+    <RelativeLayout
+        android:id="@+id/macroLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"></RelativeLayout>
 </RelativeLayout>
