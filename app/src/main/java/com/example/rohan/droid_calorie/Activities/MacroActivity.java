@@ -41,9 +41,8 @@ public class MacroActivity extends AppCompatActivity {
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             mainLayout = (RelativeLayout) findViewById(R.id.mainLayout);
             pieChart = new PieChart(this);
-            mainLayout.addView(pieChart);
+            mainLayout.addView(pieChart,500,400);
             pieChart.setUsePercentValues(true);
-
             pieChart.setDrawHoleEnabled(true);
             pieChart.setHoleColorTransparent(true);
             pieChart.setHoleRadius(7);
@@ -72,22 +71,8 @@ public class MacroActivity extends AppCompatActivity {
 
 
 
-            //Set Chart Value Selected Listener
-                pieChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener()
-                {
-                @Override
-                public void onValueSelected(Entry entry, int i, Highlight highlight) {
-                    //selects display message
-                    if (entry == null)
-                        return;
-                    Toast.makeText(MacroActivity.this,
-                            xData[entry.getXIndex()] + "=" + entry.getVal() + "%", Toast.LENGTH_SHORT).show();
-                }
 
-                @Override
-                public void onNothingSelected() {
 
-                }
 
 
             });
@@ -96,7 +81,7 @@ public class MacroActivity extends AppCompatActivity {
             addData();
 
             //Legend
-            Legend l = macro.getLegend();
+            Legend l = pieChart.getLegend();
             l.setPosition(Legend.LegendPosition.ABOVE_CHART_CENTER);
             l.setXEntrySpace(7);
             l.setYEntrySpace(5);
@@ -143,12 +128,12 @@ public class MacroActivity extends AppCompatActivity {
             data.setValueTextSize(11f);
             data.setValueTextColor(Color.GRAY);
 
-            macro.setData(data);
+            pieChart.setData(data);
             //undo all highlights
-            macro.highlightValue(null);
+            pieChart.highlightValue(null);
 
             //update pie chart
-            macro.invalidate();
+            pieChart.invalidate();
 
             //demo!
         }
