@@ -1,0 +1,30 @@
+ <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nineinchmales.longcircuit.MainActivity">
+    <item
+        android:id="@+id/food_activity_menu_button"
+        android:orderInCategory="0"
+        android:title="Food"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/user_activity_menu_button"
+        android:orderInCategory="1"
+        android:title="Users"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/dash_activity_menu_button"
+        android:orderInCategory="2"
+        android:title="Dashboard"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/day_activity_menu_button"
+        android:orderInCategory="3"
+        android:title="Day Detail"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/macro_activity_menu_button"
+        android:orderInCategory="4"
+        android:title="Macro Detail"
+        app:showAsAction="never" />
+</menu>
