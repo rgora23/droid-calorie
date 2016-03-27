@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 
 import com.example.rohan.droid_calorie.Model.User;
 import com.example.rohan.droid_calorie.R;
+import com.example.rohan.droid_calorie.Utils.UserAdapter;
 
 import java.util.ArrayList;
 
