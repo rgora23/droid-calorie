@@ -38,7 +38,7 @@ public class FoodActivity extends AppCompatActivity {
                 return true;
 
             case R.id.user_activity_menu_button:
-                startActivityForResult(new Intent(FoodActivity.this, AccountActivity.class), 0);
+                startActivityForResult(new Intent(FoodActivity.this, MainActivity.class), 0);
                 return true;
 
             case R.id.macro_activity_menu_button:

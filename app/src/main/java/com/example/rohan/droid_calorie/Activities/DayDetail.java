@@ -38,7 +38,7 @@ public class DayDetail extends AppCompatActivity {
                 return true;
 
             case R.id.user_activity_menu_button:
-                startActivityForResult(new Intent(DayDetail.this, AccountActivity.class), 0);
+                startActivityForResult(new Intent(DayDetail.this, MainActivity.class), 0);
                 return true;
 
             case R.id.macro_activity_menu_button:

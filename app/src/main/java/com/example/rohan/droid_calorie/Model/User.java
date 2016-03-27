@@ -1,5 +1,8 @@
 package com.example.rohan.droid_calorie.Model;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 /**
  * Created by Rohan on 3/26/16.
  */
@@ -15,12 +18,28 @@ public class User {
 
     }
 
-    public User(String userName){
+    public User(String userName, double bodyWeight, String height, double bmi, String mealPlan){
         this.userName = userName;
-        this.bodyWeight = 160;
-        this.height = "5'9";
-        this.bmi = 22.8;
-        this.mealPlan = "Cutting";
+        this.bodyWeight = bodyWeight;
+        this.height = height;
+        this.bmi = bmi;
+        this.mealPlan = mealPlan;
+    }
+
+    public static ArrayList<User> loadSampleUsers() {
+        ArrayList<User> users = new ArrayList<>();
+        User rohan = new User("Rohan Gorawala", 160, "5'9", 22.8, "cutting");
+        User josh = new User("Josh Sexton", 198, "6'0", 22, "maintaining");
+        User obama = new User("Barack Obama", 178, "5'10", 45, "bulking");
+        users.add(rohan);
+        users.add(josh);
+        users.add(obama);
+        return users;
+    }
+
+    @Override
+    public String toString(){
+        return userName;
     }
 
     public String getUserName(){

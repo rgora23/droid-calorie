@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:design:23.2.1'
     compile files('libs/mpandroidchartlibrary-2-1-6.jar')
+    compile files('src/libs/mpandroidchartlibrary-2-1-6.jar')
 }

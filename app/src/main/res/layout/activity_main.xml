@@ -22,58 +22,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_marginTop="40dp">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/scrollView"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" >
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Donald Trump"
-                    android:clickable="true"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/textView2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Hillary Clinton"
-                    android:clickable="true"
-                    android:layout_marginTop="10dp"
-                    android:textStyle="bold"
-                    android:id="@+id/textView3" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Bernie Sanders"
-                    android:clickable="true"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/textView4" />
-            </LinearLayout>
-        </ScrollView>
-
-    </RelativeLayout>
-
-
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="182dp"
+        android:layout_below="@+id/textView"
+        tools:listitem="@android:layout/simple_list_item_2" />
 
 
 </RelativeLayout>
