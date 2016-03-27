@@ -41,8 +41,9 @@ public class MacroActivity extends AppCompatActivity {
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             mainLayout = (RelativeLayout) findViewById(R.id.mainLayout);
             pieChart = new PieChart(this);
-            mainLayout.addView(pieChart,500,400);
+            mainLayout.addView(pieChart,900,900);
             pieChart.setUsePercentValues(true);
+            pieChart.setDescription("");
             pieChart.setDrawHoleEnabled(true);
             pieChart.setHoleColorTransparent(true);
             pieChart.setHoleRadius(7);
@@ -69,12 +70,6 @@ public class MacroActivity extends AppCompatActivity {
 
                 }
 
-
-
-
-
-
-
             });
 
             //addData
@@ -82,9 +77,8 @@ public class MacroActivity extends AppCompatActivity {
 
             //Legend
             Legend l = pieChart.getLegend();
-            l.setPosition(Legend.LegendPosition.ABOVE_CHART_CENTER);
-            l.setXEntrySpace(7);
-            l.setYEntrySpace(5);
+            l.setEnabled(false);
+
         }
 
         private void addData() {
@@ -134,6 +128,7 @@ public class MacroActivity extends AppCompatActivity {
 
             //update pie chart
             pieChart.invalidate();
+
 
             //demo!
         }
