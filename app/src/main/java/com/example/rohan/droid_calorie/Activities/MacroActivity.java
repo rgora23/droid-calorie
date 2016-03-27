@@ -28,36 +28,53 @@ import java.util.ArrayList;
 
 public class MacroActivity extends AppCompatActivity {
 
-        private RelativeLayout macroLayout;
-        private PieChart macro;
-        private float[] yData = {60,45,25};
-        private String[] xData = {"Protein", "Carbs", "Fat"};
+
+        private RelativeLayout mainLayout;
+        private PieChart pieChart;
+        private float[] yData = { 5, 10, 15, 30, 40 };
+        private String[] xData = { "Sony", "Huawei", "LG", "Apple", "Samsung" };
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_macro);
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            macroLayout = (RelativeLayout) findViewById(R.id.macroLayout);
-            macro = new PieChart(this);
-            //adds macro to macoLayout
-            macroLayout.addView(macro);
-            macroLayout.setBackgroundColor(Color.MAGENTA);
-            //configures PieChar
-            macro.setUsePercentValues(true);
-            macro.setDescription("The shit you've been eating");
-            //set draw hole
-            macro.setDrawHoleEnabled(true);
-            macro.setHoleColorTransparent(true);
-            macro.setHoleRadius(7);
-            macro.setTransparentCircleRadius(10);
+            mainLayout = (RelativeLayout) findViewById(R.id.mainLayout);
+            pieChart = new PieChart(this);
+            mainLayout.addView(pieChart);
+            pieChart.setUsePercentValues(true);
 
-            //Sets Rotation of the Chart by Touch
-            macro.setRotation(0);
-            macro.setRotationEnabled(true);
+            pieChart.setDrawHoleEnabled(true);
+            pieChart.setHoleColorTransparent(true);
+            pieChart.setHoleRadius(7);
+            pieChart.setTransparentCircleRadius(10);
+
+            pieChart.setRotationAngle(0);
+            pieChart.setRotationEnabled(true);
+
+            // set a chart value selected listener
+            pieChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
+
+                @Override
+                public void onValueSelected(Entry e, int dataSetIndex, Highlight h) {
+                    // display msg when value selected
+                    if (e == null)
+                        return;
+
+                    Toast.makeText(MacroActivity.this,
+                            xData[e.getXIndex()] + " = " + e.getVal() + "%", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onNothingSelected() {
+
+                }
+
+
 
             //Set Chart Value Selected Listener
-            macro.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
+                pieChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener()
+                {
                 @Override
                 public void onValueSelected(Entry entry, int i, Highlight highlight) {
                     //selects display message
